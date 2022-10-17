@@ -1,0 +1,212 @@
+/*Import af fonts*/
+@import url('https://fonts.cdnfonts.com/css/corbel?styles=65647,65649,65650,65651,65648,65652');
+@import url('https://fonts.cdnfonts.com/css/trueno?styles=28817,28823,28815,28819,28807,28809,28821');
+@import url('https://fonts.cdnfonts.com/css/metropolis-4?styles=139992,139996,139986,139988,139990,139994,139982,139984,139980');
+
+/*Fjerner margin og padding for hele siden*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Generelle regler for body*/
+
+body {
+    font-family: 'Metropolis', sans-serif;
+    color: white;
+}
+
+/*Styling af Header*/
+
+.preheader {
+    background-image: url(images/headerbg.jpg);
+    background-size: 100%;
+    background-position-y: -10px;
+    background-repeat: no-repeat;
+    height: 100px;
+}
+
+.preheader a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Trueno', sans-serif;
+    text-transform: uppercase;
+    font-style: oblique;
+    letter-spacing: 1px;
+    font-size: 50pt;
+    font-weight: bold;
+    color: white;
+    padding-top: 5px;
+}
+
+/*Styling af NAV og LINKS*/
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    background-color: #00323e;
+
+    font-family: 'Trueno', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    transition: 0.2s;
+}
+nav a {
+    background-color: #00323e;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: #02566b;
+}
+
+/*Styling af footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+    background-color: #00323e;
+    padding: 40px;
+    line-height: 25px;
+}
+.fa-brands {
+    font-size: 25pt;
+}
+footer h3 {
+    padding-bottom: 5px;
+}
+#socials {
+    position: relative;
+    top: 16px;
+}
+
+/*Styles ikoner i footer*/
+.ikoner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-brands {
+    transition: 0.1s;
+}
+.fa-instagram:hover {
+    color: #C13584;
+}
+.fa-facebook-f:hover {
+    color: #4267B2;
+}
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+/*Syling af links i footer*/
+.kontakt a {
+    transition: 0.1s;
+}
+.kontakt a:hover {
+    color: #427001;
+}
+.adresse a {
+    transition: 0.1s;
+}
+.adresse a:hover {
+    color: #427001;
+}
+
+
+/*Styling af kortsektion*/
+
+.allekort {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    width: 100%;
+    margin-bottom: 150px;
+}
+.kort {
+    width: 250px;
+    background-color: #00323e;
+    border-radius: 5px;
+
+    transition: 0.2s;
+}
+.kort:hover {
+    background-color: #427001;
+    transform: scale(102%);
+}
+.kort img {
+    border-radius: 5px 5px 0px 0px;
+    width: 250px;
+}
+.kortindhold {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    width: 90%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.kortindhold h1 {
+    color: white;
+    font-size: 15pt;
+    text-align: left;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.kortindhold h2 {
+    font-size: 10pt;
+    font-weight: 200;
+    line-height: 20px;
+}
+.kortindhold p {
+    font-size: 8pt;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+/*Styling af undermenu*/
+
+#undermenu {
+    margin-top: 50px;
+    padding-bottom: 100px;
+    gap: 50px;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/*Stlying af menupunkter*/
+.menuer {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.menuer a {
+    background-color:#427001;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+.menuer a:hover {
+    background-color: #00323e;
+}
+
+#valgtmenu {
+    background-color:#00323e;
+}
